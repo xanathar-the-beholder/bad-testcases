@@ -25,23 +25,44 @@ public class WriteShortUnitsOfCode {
 		value = value +1;
 	}
 	
+	public Long longStatementOverMultipleLines(Long l) {
+		return longStatementOverMultipleLines(
+				longStatementOverMultipleLines(
+						longStatementOverMultipleLines(
+								longStatementOverMultipleLines(
+										longStatementOverMultipleLines(
+												longStatementOverMultipleLines(
+														longStatementOverMultipleLines(
+																longStatementOverMultipleLines(
+																		longStatementOverMultipleLines(
+																				longStatementOverMultipleLines(
+																						longStatementOverMultipleLines(
+																								longStatementOverMultipleLines(
+																										longStatementOverMultipleLines(
+																												longStatementOverMultipleLines(1L))))))))))))));
+	}
+
+	public Long longStatementOverOneLine(Long l) {
+		return longStatementOverMultipleLines(longStatementOverMultipleLines(longStatementOverMultipleLines(longStatementOverMultipleLines(longStatementOverMultipleLines(longStatementOverMultipleLines(longStatementOverMultipleLines(longStatementOverMultipleLines(longStatementOverMultipleLines(longStatementOverMultipleLines(longStatementOverMultipleLines(longStatementOverMultipleLines(longStatementOverMultipleLines(longStatementOverMultipleLines(1L))))))))))))));
+	}
+
 	public void statements16WithLineComments16Lines16() {
 		int value = 0;    // Comment
-		value = value +1; // Comment
 		value = value +2; // Comment
 		value = value +1; // Comment
-		value = value +3; // Comment
+		value = value +1; // Comment
+		value = value +5; // Comment
 		value = value +1; // Comment
 		/* comment*/ value = value +2;
-		/* comment*/ value = value +1;
+		/* comment*/ value = value +3;
 		/* comment*/ value = value +4;
-		/* comment*/ value = value +1;
+		/* comment*/ value = value +3;
 		/* comment*/ value = value +2;
 		/* comment*/ value = value +1;
 		value = value +5;
-		value = value +1;
 		value = value +2;
-		value = value +1;
+		value = value +2;
+		value = value +5;
 	}
 
 	public void statements16Comments0Lines8() {
@@ -109,6 +130,25 @@ public class WriteShortUnitsOfCode {
 		   A comment 12
 		   A comment 13
 		   A comment 14 */
+		value = value +1;
+	}
+	
+	public void statements2Empty14Lines16() {
+		int value = 0;
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 		value = value +1;
 	}
 
