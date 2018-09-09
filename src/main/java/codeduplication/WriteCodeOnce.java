@@ -1,7 +1,8 @@
 package codeduplication;
 
 /**
- *  
+ * Duplication detection ignores comments and whitespace.
+ * But doesn't detect if put multiple statements on one line. 
  */
 public class WriteCodeOnce {
 
@@ -20,6 +21,9 @@ public class WriteCodeOnce {
 		name++;
 	}
 
+	/**
+	 * Flagged : Yes
+	 */
 	public void literalCopy() {
 		name++;
 		name++;
@@ -33,6 +37,9 @@ public class WriteCodeOnce {
 		name++;
 	}
 	
+	/**
+	 * Flagged : Yes
+	 */
 	public void literalCopyWithDifferentFormatting() {
 		name ++ ;
 		name ++ ;
@@ -46,6 +53,9 @@ public class WriteCodeOnce {
 		name ++ ;
 	}
 
+	/**
+	 * Flagged : No
+	 */
 	public void multipleStatementsOnOneLine() {
 		name++;name++;
 		name++;name++;
@@ -54,6 +64,9 @@ public class WriteCodeOnce {
 		name++;name++;
 	}
 
+	/**
+	 * Flagged : Yes
+	 */
 	public void copyWithComments() {
 		name++;
 		name++; // Comment
@@ -67,6 +80,9 @@ public class WriteCodeOnce {
 		name++;
 	}
 
+	/**
+	 * Flagged : Yes
+	 */
 	public void anotherCopyWithEmptyLines() {
 		name++;
 		
