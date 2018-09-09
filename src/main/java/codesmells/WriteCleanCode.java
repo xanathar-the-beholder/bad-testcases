@@ -12,10 +12,15 @@ public class WriteCleanCode {
 		// JIRA-1234: Fixes a bug when summing negative numbers
 	}
 	
-	public void leaveNoCodeInCommentsBehind() {
+	public void leaveNoCodeInCommentsBehind_one() {
 		// System.out.println("Test")
 	}
-	
+
+	public void leaveNoCodeInCommentsBehind_two() {
+		// WriteCleanCode.class.getName()
+		// new WriteCodeOnce().anotherCopyWithEmptyLines();
+	}
+
 	public int leaveNoDeadCodeBehind_deadBranch() {
 		if (true) {
 			return 42;
