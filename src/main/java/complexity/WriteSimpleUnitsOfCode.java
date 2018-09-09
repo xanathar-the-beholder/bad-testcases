@@ -1,10 +1,5 @@
 package complexity;
 
-import java.util.ArrayList;
-import java.util.List;
-import java.util.Optional;
-import java.util.stream.Collectors;
-
 public class WriteSimpleUnitsOfCode {
 
 	int value;
@@ -13,49 +8,41 @@ public class WriteSimpleUnitsOfCode {
 		value = 0;
 	}
 
+	/**
+	 * Flagged: Yes
+	 */
 	public void fiveWithIf() {
 		if (value == 0 || value == 2 || value == 5 || value == 7 || value == 11) {
 			value++;
 		}
 	}
 
+	/**
+	 * Flagged: Yes
+	 */
 	public void fiveWithFor() {
-		for (int t = 0; t < 10; t++) {
-			value += 1;
-		}
-		for (int t = 0; t < 10; t++) {
-			value += 2;
-		}
-		for (int t = 0; t < 10; t++) {
-			value += 3;
-		}
-		for (int t = 0; t < 10; t++) {
-			value += 4;
-		}
-		for (int t = 0; t < 10; t++) {
-			value += 5;
-		}
+		for (int t = 0; t < 10; t++) { value += 1; }
+		for (int t = 0; t < 10; t++) { value += 2; }
+		for (int t = 0; t < 10; t++) { value += 3; }
+		for (int t = 0; t < 10; t++) { value += 4; }
+		for (int t = 0; t < 10; t++) { value += 5; }
 	}
 
+	/**
+	 * Flagged: Yes
+	 */
 	public void fiveWithWhile() {
 		int t = 0;
-		while (t < 10) {
-			value += 1; t++;
-		}
-		while (t < 10) {
-			value += 2; t++;
-		}
-		while (t < 10) {
-			value += 3; t++;
-		}
-		while (t < 10) {
-			value += 4; t++;
-		}
-		while (t < 10) {
-			value += 5; t++;
-		}
+		while (t < 10) { value += 1; t++; }
+		while (t < 10) { value += 2; t++; }
+		while (t < 10) { value += 3; t++; }
+		while (t < 10) { value += 4; t++; }
+		while (t < 10) { value += 5; t++; }
 	}
 	
+	/**
+	 * Flagged: Yes
+	 */
 	public void fiveWithSwitch() {
 		switch(value) {
 		case 0: value++;

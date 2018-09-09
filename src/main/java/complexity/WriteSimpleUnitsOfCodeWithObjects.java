@@ -7,6 +7,9 @@ import java.util.stream.Collectors;
 
 public class WriteSimpleUnitsOfCodeWithObjects {
 
+	/**
+	 * Flagged: No
+	 */
 	public void fiveWithStreamingApi() {
 		List<Integer> list = new ArrayList<>();
 		list.stream()
@@ -18,6 +21,9 @@ public class WriteSimpleUnitsOfCodeWithObjects {
 			.collect(Collectors.toList());
 	}
 
+	/**
+	 * Flagged: No
+	 */
 	public void fiveWithStreamingApiTwo() {
 		List<Integer> list = new ArrayList<>();
 		list.stream()
@@ -25,6 +31,9 @@ public class WriteSimpleUnitsOfCodeWithObjects {
 			.collect(Collectors.toList());
 	}
 
+	/**
+	 * Flagged: No
+	 */
 	public void fiveWithOptionalCondition(Integer value) {
 		value = value + Optional.ofNullable(value).orElse(2);
 		value = value + Optional.ofNullable(value).orElse(3);
