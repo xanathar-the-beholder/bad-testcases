@@ -11,15 +11,19 @@ import methodargs.KeepUnitInterfacesSmall;
 import methodlength.WriteShortUnitsOfCode;
 
 /**
- * Test code metrics: - The number of lines of test code should be at least 50%
- * of the production code. - The number of lines of test code with an assert
- * should be at least 5%.
+ * Test code metrics: 
+ * - The number of lines of test code should be at least 50% of the production code. 
+ * - The number of lines of test code with an assert should be at least 5%.
  * 
- * Untested Files - Classes are removed from this list when sufficient lines are
- * covered by method invocations to the class.
+ * Untested Files 
+ * - Classes are removed from this list when sufficient lines are covered by method invocations to the class.
  * 
- * Interesting: - Tests don't have to pass. - Tests don't have to test anything.
- * - Test code can be plain wrong. - Tests are not checked for duplication.
+ * Interesting: 
+ * - Tests don't have to pass. 
+ * - Tests don't have to test anything.
+ * - Test code can be plain wrong. 
+ * - Tests are not checked for duplication.
+ * - Tests are not checked for simple units of code.
  */
 public class AutomateTests {
 
