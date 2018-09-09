@@ -22,6 +22,9 @@ public class AutomateTests {
 		assertTrue(false);
 	}
 
+	/**
+	 * Doesn't work
+	 */
 	@Test
 	public void shouldRefenceClasses() {
 		WriteCodeOnce.class.getName();
@@ -32,7 +35,45 @@ public class AutomateTests {
 	}
 	
 	@Test
+	public void shouldInvokeMethods() {
+		WriteCodeOnce once = null;
+		once.anotherCopyWithEmptyLines();
+		WriteSimpleUnitsOfCode simple = null;
+		simple.fiveWithFor();
+		WriteSimpleUnitsOfCodeWithObjects obj = null;
+		obj.fiveWithOptionalCondition(0);
+		KeepUnitInterfacesSmall small = null;
+		small.fourArg(1, 2, 3, 4);
+		WriteShortUnitsOfCode shrt = null;
+		shrt.longStatementOverMultipleLines(1L);
+	}
+	
+	
+	@Test
 	public void shouldHaveLotsOfLinesWithAsserts() {
+		assertTrue(true);
+		assertTrue(true);
+		assertTrue(true);
+		assertTrue(true);
+		assertTrue(true);
+		assertTrue(true);
+		assertTrue(true);
+		assertTrue(true);
+		assertTrue(true);
+		assertTrue(true);
+		assertTrue(true);
+		assertTrue(true);
+		assertTrue(true);
+		assertTrue(true);
+		assertTrue(true);
+		assertTrue(true);
+		assertTrue(true);
+		assertTrue(true);
+		assertTrue(true);
+		assertTrue(true);
+		assertTrue(true);
+		assertTrue(true);
+		assertTrue(true);
 		assertTrue(true);
 		assertTrue(true);
 		assertTrue(true);
