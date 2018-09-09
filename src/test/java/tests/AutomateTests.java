@@ -42,10 +42,14 @@ public class AutomateTests {
 		simple.fiveWithFor();
 		WriteSimpleUnitsOfCodeWithObjects obj = null;
 		obj.fiveWithOptionalCondition(0);
+		obj.fiveWithStreamingApi();
+		obj.fiveWithStreamingApiTwo();
 		KeepUnitInterfacesSmall small = null;
 		small.fourArg(1, 2, 3, 4);
 		WriteShortUnitsOfCode shrt = null;
 		shrt.longStatementOverMultipleLines(1L);
+		shrt.longStatementOverOneLine(1L);
+		shrt.statements16Comments0Lines16();
 	}
 	
 	
