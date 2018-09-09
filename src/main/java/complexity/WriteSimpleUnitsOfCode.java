@@ -40,24 +40,19 @@ public class WriteSimpleUnitsOfCode {
 	public void fiveWithWhile() {
 		int t = 0;
 		while (t < 10) {
-			value += 1;
-			t++;
+			value += 1; t++;
 		}
 		while (t < 10) {
-			value += 2;
-			t++;
+			value += 2; t++;
 		}
 		while (t < 10) {
-			value += 3;
-			t++;
+			value += 3; t++;
 		}
 		while (t < 10) {
-			value += 4;
-			t++;
+			value += 4; t++;
 		}
 		while (t < 10) {
-			value += 5;
-			t++;
+			value += 5; t++;
 		}
 	}
 	
@@ -69,32 +64,6 @@ public class WriteSimpleUnitsOfCode {
 		case 3: value++;
 		case 4: value++;
 		}
-	}
-	
-	public void fiveWithStreamingApi() {
-		List<Integer> list = new ArrayList<>();
-		list.stream()
-			.filter(i -> i > 0)
-			.filter(i -> i > 1)
-			.filter(i -> i > 2)
-			.filter(i -> i > 3)
-			.filter(i -> i > 4)
-			.collect(Collectors.toList());
-	}
-
-	public void fiveWithStreamingApiTwo() {
-		List<Integer> list = new ArrayList<>();
-		list.stream()
-			.filter(i -> i > 0 || i >1 || i > 2 || i>3 || i>4)
-			.collect(Collectors.toList());
-	}
-
-	public void fiveWithOptionalCondition(Integer value) {
-		value = value + Optional.ofNullable(value).orElse(2);
-		value = value + Optional.ofNullable(value).orElse(3);
-		value = value + Optional.ofNullable(value).orElse(4);
-		value = value + Optional.ofNullable(value).orElse(5);
-		value = value + Optional.ofNullable(value).orElse(6);
 	}
 
 }
