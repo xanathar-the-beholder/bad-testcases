@@ -1,5 +1,9 @@
 package methodargs;
 
+/**
+ * Anything above 2 args gets flagged. 
+ * Varargs and object args don't count. 
+ */
 public class KeepUnitInterfacesSmall {
 
 	public static class Args {
