@@ -3,6 +3,7 @@ package methodlength;
 /**
  * Does the analyzer count lines or statements? -> Lines
  * Does it include comments? -> No
+ * Does it include empty lines? -> No
  */
 public class WriteShortUnitsOfCode {
 
@@ -28,14 +29,14 @@ public class WriteShortUnitsOfCode {
 	public Long longStatementOverMultipleLines(Long l) {
 		return longStatementOverMultipleLines(
 				longStatementOverMultipleLines(
-						longStatementOverMultipleLines(
+						longStatementOverOneLine(
 								longStatementOverMultipleLines(
 										longStatementOverMultipleLines(
-												longStatementOverMultipleLines(
+												longStatementOverOneLine(
 														longStatementOverMultipleLines(
 																longStatementOverMultipleLines(
 																		longStatementOverMultipleLines(
-																				longStatementOverMultipleLines(
+																				longStatementOverOneLine(
 																						longStatementOverMultipleLines(
 																								longStatementOverMultipleLines(
 																										longStatementOverMultipleLines(

@@ -1,0 +1,67 @@
+package codeduplication;
+
+public class WriteCodeOnce {
+
+	private int name;
+	
+	public void methodToDuplicate() {
+		name++;
+		name++;
+		name++;
+		name++;
+		name++;
+		name++;
+		name++;
+		name++;
+		name++;
+		name++;
+	}
+
+	public void literalCopy() {
+		name++;
+		name++;
+		name++;
+		name++;
+		name++;
+		name++;
+		name++;
+		name++;
+		name++;
+		name++;
+	}
+
+	public void multipleStatementsOnOneLine() {
+		name++;name++;
+		name++;name++;
+		name++;name++;
+		name++;name++;
+		name++;name++;
+	}
+
+	public void copyWithComments() {
+		name++;
+		name++; // Comment
+		name++;
+		name++;
+		name++;
+		name++;
+		name++; // Comment
+		name++;
+		name++;
+		name++;
+	}
+
+	public void anotherCopyWithComments() {
+		name++;
+		name++; 
+		/* comment*/ name++;
+		name++;
+		name++;
+		name++;
+		/* comment*/ name++; 
+		name++;
+		name++;
+		name++;
+	}
+
+}
