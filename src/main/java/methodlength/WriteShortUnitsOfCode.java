@@ -69,12 +69,12 @@ public class WriteShortUnitsOfCode {
 	public void statements16Comments0Lines8() {
 		int value = 0; value = value +1;
 		value = value +1; value = value +1;
+		value = value +2; value = value +1;
+		value = value +1; value = value +2;
 		value = value +1; value = value +1;
-		value = value +1; value = value +1;
-		value = value +1; value = value +1;
-		value = value +1; value = value +1;
+		value = value +2; value = value +1;
 		value = value +1; value = value +1; 
-		value = value +1; value = value +1;
+		value = value +1; value = value +2;
 	}
 	
 	public void statements2Comments14Lines16() {

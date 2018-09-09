@@ -1,5 +1,8 @@
 package codeduplication;
 
+/**
+ *  
+ */
 public class WriteCodeOnce {
 
 	private int name;
@@ -28,6 +31,19 @@ public class WriteCodeOnce {
 		name++;
 		name++;
 		name++;
+	}
+	
+	public void literalCopyWithDifferentFormatting() {
+		name ++ ;
+		name ++ ;
+		name ++ ;
+		name ++ ;
+		name ++ ;
+		name ++ ;
+		name ++ ;
+		name ++ ;
+		name ++ ;
+		name ++ ;
 	}
 
 	public void multipleStatementsOnOneLine() {
