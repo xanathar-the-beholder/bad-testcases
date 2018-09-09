@@ -67,16 +67,21 @@ public class WriteCodeOnce {
 		name++;
 	}
 
-	public void anotherCopyWithComments() {
+	public void anotherCopyWithEmptyLines() {
 		name++;
+		
 		name++; 
-		/* comment*/ name++;
+		name++;
+		
 		name++;
 		name++;
+		
 		name++;
-		/* comment*/ name++; 
+		name++;
+		
 		name++;
 		name++;
+		
 		name++;
 	}
 
